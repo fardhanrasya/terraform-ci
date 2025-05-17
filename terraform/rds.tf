@@ -5,7 +5,7 @@ module "db" {
 
   engine            = "mysql"
   engine_version    = "5.7"
-  instance_class    = "db.t3.micro"  # Menggunakan t3.micro yang lebih umum didukung
+  instance_class    = "db.t3.micro" # Menggunakan t3.micro yang lebih umum didukung
   allocated_storage = 5
 
   db_name  = "demodb"
