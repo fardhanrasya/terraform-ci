@@ -47,10 +47,7 @@ jobs:
       id: init
       working-directory: ./terraform
       run: |
-        terraform init -input=false \
-          -backend-config="bucket=${{ env.TF_BACKEND_BUCKET}}" \
-          -backend-config="key=terraform.tfstate" \
-          -backend-config="region=${{ env.AWS_REGION }}"
+        terraform init -input=false
 
     - name: Terraform Format
       id: fmt
